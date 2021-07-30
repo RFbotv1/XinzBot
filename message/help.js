@@ -145,9 +145,7 @@ ${i.prem} : Fitur khusus premium user`
 }
 
 exports.newMenu = (prefix, i) => {
-    return `Hai {pushname} 👋
-
-⦿ Jam : ${tampilJam}
+    return `⦿ Jam : ${tampilJam}
 ⦿ Hari : ${tampilHari}
 
 Berikut menu yang terdapat di Softbot 🤖
