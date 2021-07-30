@@ -1,4 +1,4 @@
-exports.menu = (prefix, i) => {
+exports.newmenu = (prefix, i) => {
     return `*Xinz Bot*
 Created by Xinz Team
 
@@ -144,7 +144,7 @@ ${i.glimit} : Fitur yang memakai 1 limit game
 ${i.prem} : Fitur khusus premium user`
 }
 
-exports.newMenu = (ucapan, ownerName, botName, prefix, pendaftar, runtime, pushname, isOwner, isPremium, sisalimit, limitCount, glimit, gcount, expired, tanggal, jam) => {
+exports. = (ucapan, ownerName, botName, prefix, pendaftar, runtime, pushname, isOwner, isPremium, sisalimit, limitCount, glimit, gcount, expired, tanggal, jam) => {
     return `╒═══ 《 *${botName}* 》 ═══
 ├────────────────────
 ├≽ *Creator : ${ownerName}*
