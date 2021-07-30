@@ -1,4 +1,4 @@
-exports.newMenu = (prefix, i) => {
+exports.menu = (prefix, i) => {
     return `*Xinz Bot*
 Created by Xinz Team
 
@@ -144,8 +144,9 @@ ${i.glimit} : Fitur yang memakai 1 limit game
 ${i.prem} : Fitur khusus premium user`
 }
 
-exports. = (ucapan, ownerName, botName, prefix, pendaftar, runtime, pushname, isOwner, isPremium, sisalimit, limitCount, glimit, gcount, expired, tanggal, jam) => {
-    return `╒═══ 《 *${botName}* 》 ═══
+exports.newMenu = (ucapan, ownerName, botName, prefix, pendaftar, runtime, pushname, isOwner, isPremium, sisalimit, limitCount, glimit, gcount, expired, tanggal, jam) => {
+    return `${ucapan.data.result} ${pushname}
+╒═══ 《 *${botName}* 》 ═══
 ├────────────────────
 ├≽ *Creator : ${ownerName}*
 ├≽ *Lib : Baileys V.3.5.1*
@@ -197,6 +198,7 @@ exports. = (ucapan, ownerName, botName, prefix, pendaftar, runtime, pushname, is
 ├≽ *Adiwajshing/Baileys*
 ╘═══ 《 *By ${ownerName}* 》 ═══`
 }
+
 
 exports.stickerMenu = (prefix, ownerName) => {
     return `╒═══ 《 *STICKER MENU* 》 ═══
