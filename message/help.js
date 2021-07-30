@@ -146,57 +146,33 @@ ${i.prem} : Fitur khusus premium user`
 
 exports.newMenu = (ucapan, ownerName, botName, prefix, pendaftar, runtime, pushname, isOwner, isPremium, sisalimit, limitCount, glimit, gcount, expired, tanggal, jam) => {
     return `${ucapan.data.result} ${pushname}
-╒═══ 《 *${botName}* 》 ═══
-├────────────────────
-├≽ *Creator : ${ownerName}*
-├≽ *Lib : Baileys V.3.5.1*
-├≽ *Prefix : 「 ${prefix} 」*
-├≽ *Total Fitur : 132+*
-├≽ *Total Pengguna : ${pendaftar.length}*
-├≽ *Tanggal : ${tanggal}*
-├≽ *Pukul : ${jam}*
-├≽ *Runtime Bot*
-├≽ *${runtime}*
-├────────────────────
-╞═══ 《 *USER INFO* 》 ═══
-├────────────────────
-├≽ *Name* : *${pushname}*
-├≽ *Status* : *${isOwner ? 'OWNER' : isPremium ? 'Premium' : 'Gratisan'}*
-├≽ *Limit* : *${isPremium ? 'Unlimited' : `${sisalimit}/${limitCount}`}*
-├≽ *Limit Game* : *${isOwner ? 'Unlimited' : `${glimit}/${gcount}`}*
-├≽ *Expired Prem : ${isOwner ? '-' : isPremium ? expired : 'Not Premium'}*
-├────────────────────
-╞═══ 《 *MENU* 》 ═══
-├────────────────────
-├≽ *${prefix}stickermenu*
-├≽ *${prefix}creatormenu*
-├≽ *${prefix}groupmenu*
-├≽ *${prefix}sistemmenu*
-├≽ *${prefix}kerangmenu*
-├≽ *${prefix}gamemenu*
-├≽ *${prefix}downloadmenu*
-├≽ *${prefix}searchmenu*
-├≽ *${prefix}stalkmenu*
-├≽ *${prefix}randommenu*
-├≽ *${prefix}animemenu*
-├≽ *${prefix}nsfwmenu*
-├≽ *${prefix}toolsmenu*
-├≽ *${prefix}makermenu*
-├≽ *${prefix}storagemenu*
-├≽ *${prefix}othermenu*
-├────────────────────
-╞═══ 《 *THANKS TO* 》 ═══
-├────────────────────
-├≽ *Xinz-Team*
-├≽ *Aqulzz*
-├≽ *Nafiz*
-├≽ *Y-DhyZx*
-├≽ *Ramlan ID*
-├≽ *X-MrG3P5*
-├≽ *Nanda*
-├≽ *Juwen*
-├≽ *Adiwajshing/Baileys*
-╘═══ 《 *By ${ownerName}* 》 ═══`
+Hai {pushname} 👋
+
+⦿ Jam : ${tampilJam}
+⦿ Hari : ${tampilHari}
+
+Berikut menu yang terdapat di Softbot 🤖
+
+*• #stickermenu*
+*• #creatormenu*
+*• #groupmenu*
+*• #sistemmenu*
+*• #kerangmenu*
+*• #gamemenu*
+*• #downloadmenu*
+*• #searchmenu*
+*• #stalkmenu*
+*• #randommenu*
+*• #animemenu*
+*• #nsfwmenu*
+*• #toolsmenu*
+*• #makermenu*
+*• #storagemenu*
+*• #othermenu*
+
+Thanks--
+Aqulzz「 Mastah 」
+© By Murphy`
 }
 
 exports.stickerMenu = (prefix, ownerName) => {
@@ -213,53 +189,47 @@ exports.stickerMenu = (prefix, ownerName) => {
 }
 
 exports.ownerMenu = (prefix, ownerName) => {
-    return `╒═══ 《 *CREATOR MENU* 》 ═══
-├────────────────────
-├≽ *${prefix}addprem*
-├≽ *${prefix}delprem*
-├≽ *${prefix}ban*
-├≽ *${prefix}unban*
-├≽ *${prefix}join*
-├≽ *${prefix}addbaword*
-├≽ *${prefix}delbaword*
-├≽ *${prefix}addchangelog*
-├≽ *${prefix}public*
-├≽ *${prefix}self*
-├≽ *${prefix}exif*
-├≽ *${prefix}bc*
-├≽ *${prefix}setprefix*
-├≽ *${prefix}clearall*
-├≽ *${prefix}>*
-├≽ *${prefix}$*
-├─────────────────────
-╘═══ 《 *By ${ownerName}* 》 ═══`
+    return `
+├• *${prefix}addprem*
+├• *${prefix}delprem*
+├• *${prefix}ban*
+├• *${prefix}unban*
+├• *${prefix}join*
+├• *${prefix}addbaword*
+├• *${prefix}delbaword*
+├• *${prefix}addchangelog*
+├• *${prefix}public*
+├• *${prefix}self*
+├• *${prefix}exif*
+├• *${prefix}bc*
+├• *${prefix}setprefix*
+├• *${prefix}clearall*
+├• *${prefix}>*
+├• *${prefix}$*`
 }
 
 exports.groupMenu = (prefix, ownerName) => {
-    return `╒═══ 《 *GROUP MENU* 》 ═══
-├────────────────────
-├≽ *${prefix}afk*
-├≽ *${prefix}infogrup*
-├≽ *${prefix}add*
-├≽ *${prefix}kick*
-├≽ *${prefix}promote*
-├≽ *${prefix}demote*
-├≽ *${prefix}linkgc*
-├≽ *${prefix}leave*
-├≽ *${prefix}setdesc*
-├≽ *${prefix}setgrupname*
-├≽ *${prefix}setppgrup*
-├≽ *${prefix}opengrup*
-├≽ *${prefix}closegrup*
-├≽ *${prefix}tagall*
-├≽ *${prefix}tagme*
-├≽ *${prefix}kontak*
-├≽ *${prefix}hidetag*
-├≽ *${prefix}getpp*
-├≽ *${prefix}mute*
-├≽ *${prefix}unmute*
-├─────────────────────
-╘═══ 《 *By ${ownerName}* 》 ═══`
+    return `
+├• *${prefix}afk*
+├• *${prefix}infogrup*
+├• *${prefix}add*
+├• *${prefix}kick*
+├• *${prefix}promote*
+├• *${prefix}demote*
+├• *${prefix}linkgc*
+├• *${prefix}leave*
+├• *${prefix}setdesc*
+├• *${prefix}setgrupname*
+├• *${prefix}setppgrup*
+├• *${prefix}opengrup*
+├• *${prefix}closegrup*
+├• *${prefix}tagall*
+├• *${prefix}tagme*
+├• *${prefix}kontak*
+├• *${prefix}hidetag*
+├• *${prefix}getpp*
+├• *${prefix}mute*
+├• *${prefix}unmute*`
 }
 
 exports.sistemMenu = (prefix, ownerName) => {
