@@ -145,8 +145,7 @@ ${i.prem} : Fitur khusus premium user`
 }
 
 exports.newMenu = (ucapan, ownerName, botName, prefix, pendaftar, runtime, pushname, isOwner, isPremium, sisalimit, limitCount, glimit, gcount, expired, tanggal, jam) => {
-    return `${ucapan.data.result} ${pushname}
-Hai {pushname} 👋
+    return `Hai {pushname} 👋
 
 ⦿ Jam : ${tampilJam}
 ⦿ Hari : ${tampilHari}
@@ -171,7 +170,7 @@ Berikut menu yang terdapat di Softbot 🤖
 *• #othermenu*
 
 Thanks--
-Aqulzz「 Mastah 」
+Aqulzz
 © By Murphy`
 }
 
