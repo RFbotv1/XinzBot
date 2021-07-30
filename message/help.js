@@ -144,46 +144,36 @@ ${i.glimit} : Fitur yang memakai 1 limit game
 ${i.prem} : Fitur khusus premium user`
 }
 
-exports.newMenu = (prefix, i) => {
-    return `⦿ Jam : ${tampilJam}
-⦿ Hari : ${tampilHari}
-
-Berikut menu yang terdapat di Softbot 🤖
-
-*• #stickermenu*
-*• #creatormenu*
-*• #groupmenu*
-*• #sistemmenu*
-*• #kerangmenu*
-*• #gamemenu*
-*• #downloadmenu*
-*• #searchmenu*
-*• #stalkmenu*
-*• #randommenu*
-*• #animemenu*
-*• #nsfwmenu*
-*• #toolsmenu*
-*• #makermenu*
-*• #storagemenu*
-*• #othermenu*
-
-Thanks--
-Aqulz
-© By Murphy`
-}
-
-
-exports.stickerMenu = (prefix, ownerName) => {
-    return `╒═══ 《 *STICKER MENU* 》 ═══
+exports.newMenu = (ucapan, ownerName, botName, prefix, pendaftar, runtime, pushname, isOwner, isPremium, sisalimit, limitCount, glimit, gcount, expired, tanggal, jam) => {
+    return `${ucapan.data.result} ${pushname}
+╒═══ 《 *${botName}* 》 ═══
 ├────────────────────
-├≽ *${prefix}sticker*
-├≽ *${prefix}stickergif*
-├≽ *${prefix}swm*
-├≽ *${prefix}take*
-├≽ *${prefix}toimg*
-├≽ *${prefix}attp*
-├─────────────────────
-╘═══ 《 *By ${ownerName}* 》 ═══`
+├≽ *Creator : ${ownerName}*
+├≽ *Lib : Baileys V.3.5.1*
+├≽ *Prefix : 「 ${prefix} 」*
+├≽ *Total Fitur : 132+*
+├≽ *Total Pengguna : ${pendaftar.length}*
+├≽ *Tanggal : ${tanggal}*
+├≽ *Pukul : ${jam}*
+├≽ *Runtime Bot*
+├≽ *${runtime}*
+├────────────────────
+├≽ *${prefix}stickermenu*
+├≽ *${prefix}creatormenu*
+├≽ *${prefix}groupmenu*
+├≽ *${prefix}sistemmenu*
+├≽ *${prefix}kerangmenu*
+├≽ *${prefix}gamemenu*
+├≽ *${prefix}downloadmenu*
+├≽ *${prefix}searchmenu*
+├≽ *${prefix}stalkmenu*
+├≽ *${prefix}randommenu*
+├≽ *${prefix}animemenu*
+├≽ *${prefix}nsfwmenu*
+├≽ *${prefix}toolsmenu*
+├≽ *${prefix}makermenu*
+├≽ *${prefix}storagemenu*
+├≽ *${prefix}othermenu*`
 }
 
 exports.ownerMenu = (prefix, ownerName) => {
