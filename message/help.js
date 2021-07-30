@@ -1,4 +1,4 @@
-exports.newmenu = (prefix, i) => {
+exports.newMenu = (prefix, i) => {
     return `*Xinz Bot*
 Created by Xinz Team
 
